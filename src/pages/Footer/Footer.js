@@ -1,5 +1,4 @@
 import React from "react";
-
 import heartGif from "../../assets/img/footer/heart.gif"
 
 function Footer() {

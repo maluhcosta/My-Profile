@@ -1,12 +1,17 @@
 import React from "react";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 import githubIcon from "../../assets/img/contact/github.png";
 import LinkedinIcon from "../../assets/img/contact/linkedin.png";
 import instagramIcon from "../../assets/img/contact/instagram.png";
 
+
 function Contact() {
     return (
         <div className="contat-box">
+            <Header className="header"/>
+
             <h1>Contato</h1>
 
             <div className="contats">
@@ -27,6 +32,8 @@ function Contact() {
                     </li>
                 </ul>
             </div>
+
+            <Footer className="footer"/>
         </div>
     );
 }

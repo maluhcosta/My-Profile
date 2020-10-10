@@ -1,4 +1,6 @@
 import React from "react";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 import profilePic from "../../assets/img/about/profile-pic.png";
 import doneicon from "../../assets/img/about/done.png";
@@ -9,6 +11,8 @@ import "./style.css";
 function About() {
     return (
         <div className="about-box">
+            <Header className="header"/>
+            
             <img src={ profilePic } alt="Foto de Maria Luísa"/>
             
             <h1 className="about-title">Sobre mim</h1>
@@ -29,6 +33,8 @@ function About() {
                     <li><img src={ loadingIcon } alt="Ícone de carregando"/>ReactJS</li>
                 </ul>
             </div>
+
+            <Footer className="footer"/>
         </div>
     );
 }
