@@ -1,0 +1,67 @@
+.contat-box {
+    width: 100vw;
+    height: 100vh;
+    background: var(--background-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contat-title {
+    font-family: 'Dancing Script', cursive;
+}
+
+.contats-ul {
+    width: 70vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0 0 20% 0;
+}
+
+.contats-btn {
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-secondary);
+    border-radius: 12px;
+    transition: .4s;
+}
+
+.contats-link {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1rem;
+    color: var(--color-basic-primary);
+    text-decoration: none;
+}
+
+.contats-btn:hover {
+    transform: scale(1.1);
+}
+
+.contats-pic {
+    width: 2rem;
+    height: 2rem;
+}
+
+@media (min-width: 700px) {  
+    .contat-title {
+        font-size: 2.5rem;
+        padding: 5% 0 0 0;
+    }
+    
+    .contats-ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 0 6% 0;
+    }
+
+
+}

@@ -1,42 +1,33 @@
 import React from "react";
+import profilePic from "../../assets/img/about/profile-pic.png";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import "./about.css";
 
-import profilePic from "../../assets/img/about/profile-pic.png";
-import doneicon from "../../assets/img/about/done.png";
-import loadingIcon from "../../assets/img/about/loading.png"
-
-import "./style.css";
-
-function About() {
+export default function About() {
     return (
         <div className="about-box">
-            <Header className="header"/>
-            
-            <img src={ profilePic } alt="Foto de Maria Luísa"/>
-            
+            <Header/>
+            <img className="about-pic" src={ profilePic } alt="Foto de Maria Luísa"/>
             <h1 className="about-title">Sobre mim</h1>
             
-            <p className="about-me">
-                Meu nome é Maria Luísa Costa, sou de Recife, tenho 23 anos e amo gatos, viagens
-                e programar! Larguei a faculdade de fisioterapia no 5º período em 2019 e atualmente 
-                estudo desenvolvimento web Front-End, iniciei os estudos em junho de 2020 e estou amando!
-            </p>
-            
-            <h2>Tecnologias:</h2>
-            
-            <div className="technologies-about">
-                <ul>
-                    <li><img src={ doneicon } alt="Ícone de concluído"/>HTML</li>
-                    <li><img src={ doneicon } alt="Ícone de concluído"/>CSS</li>
-                    <li><img src={ loadingIcon } alt="Ícone de carregando"/>JavaScript</li>
-                    <li><img src={ loadingIcon } alt="Ícone de carregando"/>ReactJS</li>
-                </ul>
+            <div className="another-color">
+                <p className="about-me">
+                    Meu nome é <span className="span">Maria Luísa Oliveira da Costa</span>, sou de <span className="span">Recife</span>, tenho <span className="span">23 anos</span> e amo gatos, viajar
+                    e programar! Larguei a faculdade de fisioterapia e atualmente estudo desenvolvimento web <span className="span">Front-End</span>, desde junho de 2020 e estou amando! ❤
+                </p>
+                <h2 className="about-tec-title">Tecnologias que estudo:</h2>
+                
+                <div className="tecs-box">
+                    <ul className="about-tecs">
+                        <li className="tec-tag">HTML</li>
+                        <li className="tec-tag">CSS</li>
+                        <li className="tec-tag">JavaScript</li>
+                        <li className="tec-tag">ReactJS</li>
+                    </ul>
+                </div>
+                <Footer/>
             </div>
-
-            <Footer className="footer"/>
         </div>
     );
 }
-
-export default About;

@@ -1,0 +1,89 @@
+.portfolio-box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+    background: var(--background-primary);
+}
+
+.portfolio-title {
+    font-family: 'Dancing Script', cursive;
+    padding-top: 7%;
+}
+
+.portfolio-line {
+    width: 90vw;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.link-box-div {
+    width: 50%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.link-box-ul {
+    padding: 5% 0 0 0;
+    margin: 0;
+}
+
+.portfolio-icon {
+    width: 1.7rem;
+    height: 1.7rem;
+    padding: .6rem;
+}
+
+.portfolio-btn {
+    width: 9rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: .9rem;
+    border-radius: 12px;
+    text-decoration: none;
+    background: var(--color-primary);
+    color: var(--color-basic-primary);
+    margin-bottom: 10%;
+    transition: .4s;
+}
+
+.portfolio-btn:hover {
+    transform: scale(1.1);
+}
+
+.portfolio-link {   
+    list-style: none;
+}
+
+@media (min-width: 700px) {
+    .portfolio-box {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .link-box-ul {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .portfolio-btn {
+        width: 10rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .portfolio-icon {
+        padding: 0 .8rem 0 0;
+    }
+}

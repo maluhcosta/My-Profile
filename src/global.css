@@ -1,38 +1,23 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Dancing+Script&family=Roboto:wght@300;400&display=swap');
+
+:root {
+  font-size: 100%;
+
+  --background-primary: #fae3e7;
+  --background-secondary:#fca6b3;
+  --color-primary:#f88a98;	
+  --color-secondary:#f04b82;
+  --color-basic-primary: #fff;
+  --color-basic-secondary: #000;
+  --color-letter: #363636;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  margin: 0;
 }

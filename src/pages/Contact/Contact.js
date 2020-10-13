@@ -1,41 +1,41 @@
 import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import "./contact.css";
 
 import githubIcon from "../../assets/img/contact/github.png";
 import LinkedinIcon from "../../assets/img/contact/linkedin.png";
 import instagramIcon from "../../assets/img/contact/instagram.png";
 
 
-function Contact() {
+export default function Contact() {
     return (
         <div className="contat-box">
-            <Header className="header"/>
+            <Header/>
+            <h1 className="contat-title">Contato</h1>
+            <ul className="contats-ul">
+                <li className="contats-btn">
+                    <a className="contats-link" href="https://www.instagram.com/maluhcosta" target="blank">
+                        <img className="contats-pic" src={instagramIcon} alt="Logo do Instagram"/>
+                        /maluhcosta
+                    </a>
+                </li>
 
-            <h1>Contato</h1>
+                <li className="contats-btn">
+                    <a className="contats-link" href="https://github.com/maluhcosta" target="blank">
+                        <img className="contats-pic" src={githubIcon} alt="Logo do GitHub"/>
+                        /maluhcosta
+                    </a>
+                </li>
 
-            <div className="contats">
-                <ul>
-                    <li>
-                        <a href="https://github.com/maluhcosta" target="blank">GitHub</a>
-                        <img src={ githubIcon } alt="Logo do GitHub"/>
-                    </li>
-
-                    <li>
-                        <a href="https://www.linkedin.com/in/maluhcosta/" target="blank">LinkedIn</a>
-                        <img src={ LinkedinIcon } alt="Logo do Linkedin"/>
-                    </li>
-
-                    <li>
-                        <a href="https://www.instagram.com/maluhcosta" target="blank">Instagram</a>
-                        <img src={ instagramIcon } alt="Logo do Instagram"/>
-                    </li>
-                </ul>
-            </div>
-
-            <Footer className="footer"/>
+                <li className="contats-btn">
+                    <a className="contats-link" href="https://www.linkedin.com/in/maluhcosta/" target="blank">
+                        <img className="contats-pic" src={LinkedinIcon} alt="Logo do Linkedin"/>
+                        /maluhcosta
+                    </a>
+                </li>
+            </ul>
+            <Footer/>
         </div>
     );
 }
-
-export default Contact;

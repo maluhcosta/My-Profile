@@ -1,0 +1,95 @@
+.about-box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background-secondary);
+}
+
+.about-pic {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 5px double var(--background-primary);
+}
+
+.about-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: var(--color-basic-primary);
+    margin: 3%;
+}
+
+.another-color {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background-primary);
+}
+
+.about-me {
+    width: 75vw;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: .8rem;
+    color: var(--color-letter);
+}
+
+.span {
+    font-weight: bold;
+    line-height: 1.2rem;
+}
+
+.about-tec-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.about-tecs {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.tec-tag {
+    width: 5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: .8rem;
+    font-weight: 300;
+    background: var(--color-primary);
+    color: var(--color-basic-primary);
+    border-radius: 10px;
+    margin: 0 2% 0 0;
+    cursor: grab;
+    transition: .3s;
+}
+
+.tec-tag:hover {
+    transform: scale(1.2);
+}
+
+@media (min-width: 700px) {
+    .about-pic {
+        width: 10rem;
+        height: 10rem;
+        margin-top: 3%;
+    }
+    
+    .about-title {
+        margin: 1%;
+    }
+
+    .about-me {
+        width: 60vw;
+        text-align: center;
+    }
+}
