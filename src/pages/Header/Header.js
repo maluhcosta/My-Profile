@@ -1,9 +1,7 @@
 import React from "react";
-
-import "../../global.css";
 import "./header.css";
 
-function Header() {
+export default function Header() {
     return (
         <nav className="nav-box">            
             <input className="input-hamburger" id="menu-hamburger" type="checkbox"/>
@@ -23,6 +21,4 @@ function Header() {
             </ul>       
         </nav>
     );
-};
- 
-export default Header;
+}

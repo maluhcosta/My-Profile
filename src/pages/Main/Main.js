@@ -1,17 +1,15 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 import catGif from "../../assets/img/main/cat.gif";
 import { Link } from 'react-router-dom';
-import Footer from "../Footer/Footer";
-
-import "../../global.css";
 import "./main.css";
 
-function Main() {
+export default function Main() {
     return (
         <div className="main-box">
             <div className="gif-title-box">
                 <img className="cat-gif" src={catGif} alt="Gif de um gatinho com um coração em cima da cabeça"/>
-                <h1 className="main-title">Website de Malu</h1>
+                <h1 className="main-title">Malu Website</h1>
             </div>
 
             <div className="options">
@@ -24,5 +22,3 @@ function Main() {
         </div>
     );
 }
-
-export default Main;

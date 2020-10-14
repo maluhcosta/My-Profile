@@ -1,9 +1,8 @@
 import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import "./page404.css";
-
 import Image from "../../assets/img/page404/cat.jpg";
+import "./page404.css";
 
 export default function Page404() {
     return (

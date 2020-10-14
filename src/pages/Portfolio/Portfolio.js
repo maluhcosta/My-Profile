@@ -1,16 +1,13 @@
 import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import "./portfolio.css";
-
 import downloadIcon from "../../assets/img/portfolio/download.png";
 import repositoryIcon from "../../assets/img/portfolio/repository.png";
-
 import curriculo from "../../assets/img/portfolio/CURRICULO - MARIA LUISA.pdf";
+import "./portfolio.css";
 
 export default function Portfolio() {
-    return ( 
-
+    return (
         <div className="portfolio-box">
             <Header/>       
             <h1 className="portfolio-title">Meu Portfolio</h1>

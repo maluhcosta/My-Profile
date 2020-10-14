@@ -1,12 +1,10 @@
 import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import "./contact.css";
-
 import githubIcon from "../../assets/img/contact/github.png";
 import LinkedinIcon from "../../assets/img/contact/linkedin.png";
 import instagramIcon from "../../assets/img/contact/instagram.png";
-
+import "./contact.css";
 
 export default function Contact() {
     return (
